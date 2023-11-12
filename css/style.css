@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Jotia W00 Regular";
+    src: url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.eot");
+    src: url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/09fc87e1ac5bbdeb5c42b2c1ec4f780f.svg#Jotia W00 Regular")format("svg");
+}
+
+
+body {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: "Jotia W00 Regular";
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* -------Header------------ */
+header {height: 70px;}
+
+.navbar-nav li a {
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 13px;
+} 
+
+.header-img img {
+    margin-left: 40px;
+}
+
+.navbar-nav {
+    margin-left: -40px;
+}
+
+@media (max-width:992px) {
+
+    .search-input { 
+        margin: 5px 0 9px 24px;
+        width: 50%;
+        
+    }
+
+    .header-img img {
+        margin-left: 10px;
+    }
+
+    .navbar-nav {
+        margin-left: -5px;
+    }
+}
+
+
+/* ---------Carousel-------- */
+.carousel-item {position: relative;}
+.carousel-overlay {
+    position: absolute;
+    z-index: 5;
+    top: 230px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.carousel-overlay h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.carousel-overlay p {
+    font-size: 15px;
+}
+
+.carousel-overlay {
+    width: 530px;
+    height: 230px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width:768px) {
+    .carousel-overlay h1 {
+        font-size: 30.5px;
+        font-weight: 600;
+    }
+
+    .carousel-overlay p {
+        font-size: 12px;
+    }
+
+    .carousel-overlay {
+        margin-top: 40px;
+        width: 390px;
+        height: 195px;
+    }
+
+}
+
+/* ----------popover------------- */
+
+.popover-btn {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-image: url(../images/Charmillion-Logo-White-Black-Background-qba7pxzos3nsvksmfimcxcw6unky5kv2my29odv7v8.jpg);
+    background-size: contain;
+    position: absolute;
+    right: 5px;
+    top: 500px;
+    z-index: 20;
+    position: fixed;
+
+}
+
+.popover-btn span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color:#2FCD45;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 7px;
+
+}
+
+@media (max-width:992px) { 
+    /* .popover-btn {visibility: hidden;} */
+
+    .popover-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url(../images/Charmillion-Logo-White-Black-Background-qba7pxzos3nux8j1v4hls2h6w1fda626wam1voiprs.jpg);
+        background-size: contain;
+        position: absolute;
+        right: 5px;
+        top: 300px;
+        z-index: 20;
+        position: fixed;
+    }
+
+    .popover-btn span {
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color:#2FCD45;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 5px;
+    
+    }
+    
+}
+
+
+@media (max-width:768px) { 
+    /* .popover-btn {visibility: hidden;} */
+
+    .popover-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url(../images/Charmillion-Logo-White-Black-Background-qba7pxzos3nux8j1v4hls2h6w1fda626wam1voiprs.jpg);
+        background-size: contain;
+        position: absolute;
+        right: 5px;
+        top: 575px;
+        z-index: 20;
+        position: fixed;
+    }
+
+    .popover-btn span {
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color:#2FCD45;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 5px;
+    
+    }
+    
+}
+
+
+
+/* --------- accordion------------- */
+
+.accordion-body {text-align: justify;}
+
+/* --------- SUCCESS------------- */
+
+.p-success-sec {
+    text-align: justify;
+    font-size: 16.5px;
+}
+
+/* -------ROOM------------ */
+.room-card {
+    position: relative;
+}
+.room-p ,.room-card p , .offers-card p , .offers-p { 
+    text-align: justify;
+}
+
+.room-card::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.room-card::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.room-card:hover::before , .room-card:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+.room-card:hover {
+    transform: scale(1.03);
+}
+
+/* -------------BACKGROUND------------- */
+
+.background-container {
+    height:350px;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:contain; 
+}
+
+.background-container h3 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.background-content {
+    width: 550px;
+    height:fit-content ;
+}
+
+@media (max-width:768px) { 
+    .background-container h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: -50px;
+    }
+
+    .background-container p {
+        font-size: 13px;
+        
+    }
+
+    .background-container {
+    background-attachment: scroll; 
+    height: 200px;
+    
+    }
+    .background-content {
+        width: 350px;
+    }
+}
+
+
+/* -------------EXPERIENCE------------- */
+
+.card-body h4 a {position: relative;}
+
+.card-body h4 a::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 6px;
+    border-radius: 5px;
+    bottom: -10px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.experience-card:hover .card-body h4 a::after {
+    width: 100%;
+} 
+
+.card-body p {
+    text-align: justify;
+} 
+
+.experience-card {
+    overflow: hidden;
+}
+
+.experience-card-img {
+    max-width: max-content;
+}
+
+.experience-card-img {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.experience-card:hover .experience-card-img {
+    transform: scale(1.1);
+}
+
+/* -------------OFFERS------------- */
+
+.offers-card {
+    position: relative;
+} 
+
+.offers-card::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.offers-card::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.offers-card:hover::before , .offers-card:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+.offers-card:hover {
+    transform: scale(1.03);
+}
+
+/* -------------FOOTER------------- */
+
+.footer-explore p {
+    font-size: small;
+    margin: 2.5px 0px;
+}
+
+
+
+.footer-links-icons a {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right:10px;
+    
+}
+
+.footer-links-icons a:hover {
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: gray;
+}
+
+.footer-links p {
+    margin: 0.1px 0 ;
+    font-size: small;
+}
+
+.footer-container {
+    height: 250px;
+}
+
+.footer-p{
+    font-size: 17px;
+}
+
+
+@media (max-width:768px) {
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-explore {
+        text-align: center; 
+    } 
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-p {
+        font-size: 13px;
+    }
+}
+
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,END,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+
+
+
